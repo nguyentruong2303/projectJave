@@ -1,0 +1,19 @@
+
+Aug 10, 2020 13:45:26.80 NEW SESSION
+Aug 10, 2020 13:45:26.80 [8128:9972:0810/134526.802:ERROR:device_event_log_impl.cc(208)] [13:45:26.802] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+Aug 10, 2020 13:46:16.28 [5428:3592:0810/134616.283:ERROR:device_event_log_impl.cc(208)] [13:46:16.283] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+Aug 10, 2020 14:02:43.11 [7876:2784:0810/140243.118:ERROR:device_event_log_impl.cc(208)] [14:02:43.117] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+Aug 12, 2020 09:05:54.93 NEW SESSION
+Aug 12, 2020 09:05:54.93 [1992:8040:0812/090554.936:ERROR:device_event_log_impl.cc(208)] [09:05:54.935] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+Aug 12, 2020 11:54:30.77 [1992:8188:0812/115430.775:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Aug 12, 2020 12:54:25.83 [1992:8188:0812/125422.583:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+
+Aug 12, 2020 16:31:08.92 NEW SESSION
+Aug 12, 2020 16:31:08.92 [9320:9308:0812/163108.924:ERROR:device_event_log_impl.cc(208)] [16:31:08.923] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+Aug 13, 2020 14:54:05.13 NEW SESSION
+Aug 13, 2020 14:54:05.13 [2668:3756:0813/145405.131:ERROR:device_event_log_impl.cc(208)] [14:54:05.130] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+Aug 14, 2020 08:30:31.92 NEW SESSION
+Aug 14, 2020 08:30:31.92 [4172:5228:0814/083031.923:ERROR:device_event_log_impl.cc(208)] [08:30:31.922] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.

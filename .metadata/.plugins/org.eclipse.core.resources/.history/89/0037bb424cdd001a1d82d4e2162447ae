@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Bang Cuu Chuong</h1>
+	
+	<form action="bangcuuchuong"method="get">
+		Input Number : <input type="text" name="num">
+		<input type="submit" value="Execute">
+	</form>
+</body>
+</html>

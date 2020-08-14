@@ -1,0 +1,27 @@
+package tp.kits3.livedinner.DAO;
+
+import java.util.List;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+import tp.kits3.livedinner.vo.Contact;
+
+public class ContactDao {
+	DataSource datasource;
+	public ContactDao() {
+		try {
+			Context ctx = new InitialContext();
+			Context envCtx = (Context) ctx.lookup("java:/comp/env");
+			this.datasource = (DataSource) envCtx.lookup("jdbc/mariadb");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	public List<Contact> findAll() {
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,11 @@
+package tp.kits3.livedinner.DAO;
+
+import java.util.List;
+
+import tp.kits3.livedinner.servlet.Post;
+
+public class PostDao {
+
+	
+
+}

@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+D:\Java Web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1418763093.index
+\webShop\src
+D:\Java Web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3485455345.index
+\testWeb\src
+D:\Java Web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3498294813.index
+\AddSquare\src
+D:\Java Web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\6028011.index
+\webShop\src

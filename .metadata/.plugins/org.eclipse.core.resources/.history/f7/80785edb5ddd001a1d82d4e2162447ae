@@ -1,0 +1,12 @@
+package tp.kits3.livedinner.DAO;
+
+import java.util.List;
+
+
+
+public class BookDao {
+
+
+	}
+
+}

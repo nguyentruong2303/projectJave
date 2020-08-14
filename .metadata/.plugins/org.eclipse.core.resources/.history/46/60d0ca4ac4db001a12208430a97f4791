@@ -1,0 +1,67 @@
+package tp.kits3.livedinner.servlet;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**understand about class
+ * Servlet implementation class TagServlet
+ * what core concept of Java OOP
+ * 1. re use (one source multi use)
+ * 2. easy to maintaince(repair , update , upgrade)
+ * 
+ * amazing
+ * url:
+ *  /tag/ -> means show to tag list
+ *  /tag/insert -> means add tag 
+ *  /tag/edit -> means edit tag
+ */
+@WebServlet("/tag/*")
+public  class  TagServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private Connection conn;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public TagServlet() {
+    	//just once called by servlet container
+        super();
+      //  initConnection();
+  
+    }
+    
+    
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String uri = request.getRequestURI();
+		// delimiter string cut "/"
+		// what comma separate value ? ,,,,,,
+		String[] spiliteURI = uri.split("/");
+		int last = spiliteURI.length -1;
+		response.getWriter().append("").append(spiliteURI[last]);
+		
+	}
+	//protected abstract void resolver(ResultSet rs);
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

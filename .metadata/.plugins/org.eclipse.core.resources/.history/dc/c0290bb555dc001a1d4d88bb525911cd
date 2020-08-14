@@ -1,0 +1,28 @@
+package tp.kits3.livedinner.DAO;
+
+import java.util.List;
+
+import javax.naming.Context;
+// 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+import tp.kits3.livedinner.vo.Category;
+// use DataSource 
+
+public class CategoryDao {
+
+	public CategoryDao() {
+		try {
+			Context ctx = new InitialContext();
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+	}
+	public List<Category> findAll() {
+		
+		return null;
+	}
+
+}

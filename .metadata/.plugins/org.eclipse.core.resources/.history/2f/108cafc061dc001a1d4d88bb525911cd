@@ -1,0 +1,38 @@
+package tp.kits3.livedinner.DAO;
+
+import java.sql.Connection;
+import java.util.List;
+
+import javax.naming.Context;
+// 
+import javax.naming.InitialContext;
+
+import javax.sql.DataSource;
+
+import tp.kits3.livedinner.vo.Category;
+// use DataSource 
+
+public class CategoryDao {
+	DataSource datasource;
+	Connection conn;
+	public CategoryDao() {
+		try {
+			
+			Context ctx = new InitialContext();
+			// get info of Tomcat
+			Context envCtx = (Context)ctx.lookup("java:/comp/env"); //search servlet container
+			// get info in context.xml
+			this.datasource = (DataSource) envCtx.lookup("jdbc/mariadb");
+		
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+	}
+	public List<Category> findAll() {
+		Connection conn = this.datasource.getConnection();
+		conn.close();
+		return null;
+	}
+
+}

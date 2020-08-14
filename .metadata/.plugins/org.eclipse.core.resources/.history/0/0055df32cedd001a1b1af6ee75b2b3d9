@@ -1,0 +1,82 @@
+package tp.kits3.livedinner.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+import tp.kits3.livedinner.vo.Post;
+
+public class PostDao {
+	private DataSource ds;
+	public PostDao() {
+		try {
+			Context ctx = new InitialContext();
+			Context envCtx = (Context) ctx.lookup("java:/comp/env");
+			this.ds = (DataSource) envCtx.lookup("jdbc/mariadb");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	public List<Post> findAll() {
+		List<Post> list = null;
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			list = new ArrayList<Post>();
+			conn = this.ds.getConnection();
+			String sql_selectAll = "select * from Post";
+			pstmt = conn.prepareStatement(sql_selectAll);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				Post post = new Post();
+				post.setPid(rs.getInt("pid"));
+				post.setTitle(rs.getString("title"));
+				post.setByname(rs.getString("byname"));
+				post.setRegdate(rs.getTimestamp("regdate"));
+				post.setContent(rs.getString("content"));
+				post.setVisible(rs.getBoolean("visible"));
+				post.setTagid(rs.getInt("tagid"));
+				list.add(post);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		} finally {
+			try {
+				rs.close();
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			try {
+				pstmt.close();
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			try {
+				conn.close();
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		return list;
+	}
+	public void save(Post post) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = this.ds.getConnection();
+			String sql_insert = "insert into post("
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+	
+
+}
