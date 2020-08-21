@@ -2,6 +2,18 @@ package tp.kits3.livedinner.vo;
 
 import java.sql.Timestamp;
 // VO is value object (== table of DB) can call Model, Entity
+/**
+ * DB connect , crud , convert too compotable 
+ * mybatis :  Spring mvc
+ * DB framework -hibernate : new db tables by developer : Spring boot
+ * 
+ * all setting important path
+ * 1. config.xml : for mybatis
+ * 2. mapper.xml : for sql
+ * @author PC15
+ *
+ */
+
 public class Book {
 
     private Integer bkid;

@@ -17,3 +17,9 @@ Aug 13, 2020 14:54:05.13 [2668:3756:0813/145405.131:ERROR:device_event_log_impl.
 
 Aug 14, 2020 08:30:31.92 NEW SESSION
 Aug 14, 2020 08:30:31.92 [4172:5228:0814/083031.923:ERROR:device_event_log_impl.cc(208)] [08:30:31.922] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+Aug 19, 2020 09:03:02.83 NEW SESSION
+Aug 19, 2020 09:03:02.83 [7904:7940:0819/090302.838:ERROR:device_event_log_impl.cc(208)] [09:03:02.838] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+Aug 20, 2020 18:31:14.73 NEW SESSION
+Aug 20, 2020 18:31:14.73 [680:5108:0820/183114.729:ERROR:device_event_log_impl.cc(208)] [18:31:14.729] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.

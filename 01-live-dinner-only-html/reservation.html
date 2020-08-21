@@ -81,39 +81,39 @@
 	<!-- End All Pages -->
 	
 	<!-- Start Reservation -->
-	<div>
+	<div class=container-booking>
 		<div >
-			<div >
+			<div  class= "booking-title">
 				<div >
-					<div >
+					<div class = "booking-text">
 						<h2>Reservation</h2>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 					</div>
 				</div>
 			</div>
-			<div >
+			<div class="booking-option">
 				<div >
 					<div >
 						<form id="contactForm">
 							<div >
-								<div >
+								<div class="booking-option1" >
 									<h3>Book a table</h3>
 									<div >
 										<div >
 											<input id="input_date" name="date" type="text" value="" equired data-error="Please enter Date">
-											<div ></div>
+											
 										</div>                                 
 									</div>
 									<div >
 										<div >
 											<input id="input_time" required data-error="Please enter time">
-											<div ></div>
+											
 										</div>                                 
 									</div>
 									<div >
 										<div >
 											<select id="person" required data-error="Please select Person">
-											  <option disabled selected>Select Person*</option>
+											  <option disabled selected>Select Person</option>
 											  <option value="1">1</option>
 											  <option value="2">2</option>
 											  <option value="3">3</option>
@@ -122,36 +122,36 @@
 											  <option value="6">6</option>
 											  <option value="7">7</option>
 											</select>
-											<div ></div>
 										</div> 
 									</div>
 								</div>
-								<div >
+								<div class="booking-option2" >
 									<h3>Contact Details</h3>
 									<div >
 										<div >
 											<input type="text" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-											<div ></div>
 										</div>                                 
 									</div>
 									<div >
 										<div >
-											<input type="text" placeholder="Your Email" id="email" name="email" required data-error="Please enter your email">
-											<div ></div>
+											<input type="text"  placeholder="Your Email" id="email" name="email" required data-error="Please enter your email">
 										</div> 
 									</div>
 									<div >
 										<div >
-											<input type="text" placeholder="Your Numbar" id="phone" name="phone" required data-error="Please enter your Numbar">
-											<div ></div>
+											<input type="text" placeholder="Your Number" id="phone" name="phone" required data-error="Please enter your Number">
 										</div> 
 									</div>
+									<div>
+										<div>
+											<input type="date"id="bktime"name="bookingtime">
+										</div>
+									</div>
 								</div>
-								<div >
-									<div >
+								<div class= "booking-button">
+									<div class="booking-select">
 										<button id="submit" type="submit">Book Table</button>
-										<div id="msgSubmit" ></div> 
-										<div ></div> 
+										<div id="msgSubmit" ></div>  
 									</div>
 								</div>
 							</div>            

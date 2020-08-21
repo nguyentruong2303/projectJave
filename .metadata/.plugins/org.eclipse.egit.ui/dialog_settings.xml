@@ -9,6 +9,10 @@
 		<item value="gitlab.com"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="git@gitlab.com:theplayer/kits03/spring-exercise.git"/>
+		<item value="https://git@gitlab.com/theplayer/kits03/spring-exercise.git"/>
+		<item value="gitlab.com:theplayer/kits03/spring-exercise.git"/>
+		<item value="truong922946%40gmail.com@gitlab.com:theplayer/kits03/spring-exercise.git"/>
 		<item value="https://gitlab.com/theplayer/kits03/workout.git"/>
 		<item value="https://gitlab.com/theplayer/kits03/15.nguyenvantruong.git"/>
 		<item value="https://github.com/nguyentruong2303/demo1.git"/>

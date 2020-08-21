@@ -1,7 +1,0 @@
-package tp.kits3.truong;
-
-import javax.servlet.http.HttpServlet;
-
-public class AddServlet extends HttpServlet {
-
-}

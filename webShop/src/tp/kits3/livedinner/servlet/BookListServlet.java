@@ -35,8 +35,8 @@ public class BookListServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
-		List<Book> list = dao.findAll();
-		request.setAttribute("BookList", list);
+		//List<Book> list = dao.findAll();
+		//request.setAttribute("BookList", list);
 		
 		String prefix = "/WEB-INF/view/";
 		String profix = ".jsp";
